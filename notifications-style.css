@@ -1,0 +1,166 @@
+:root {
+    --primary-blue: #1e3a5f;
+    --text-main: #1f2937;
+    --text-muted: #4b5563;
+    --bg-gradient: radial-gradient(circle at center, #ffffff 0%, #e0f2fe 100%);
+    --card-grey: #f0f2f5;
+    --status-green: #2ecc71;
+    --btn-cancel: #c0392b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+body {
+    background: var(--bg-gradient);
+    background-attachment: fixed;
+    color: var(--text-main);
+    min-height: 100vh;
+}
+
+/* Header */
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: transparent;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--primary-blue);
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+
+.center-nav a {
+    text-decoration: none;
+    color: var(--text-muted);
+    margin: 0 12px;
+    font-size: 0.85rem;
+}
+
+.user-profile-mini {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.85rem;
+}
+
+.user-profile-mini img { border-radius: 50%; }
+
+/* Card Content */
+.details-container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.title-section { text-align: center; margin-bottom: 30px; }
+.subtitle { font-size: 0.85rem; text-align: left; margin-bottom: 10px; }
+.viewing-tag { margin-top: 10px; font-size: 0.95rem; }
+
+.shadow-card {
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.05);
+    padding: 40px;
+}
+
+/* The Internal Grey Box */
+.inner-grey-box {
+    background: var(--card-grey);
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #e2e8f0;
+}
+
+.label {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    margin-bottom: 5px;
+}
+
+.appt-id { font-size: 1.8rem; margin-bottom: 20px; color: #111; }
+.patient-name { font-size: 1.6rem; margin-bottom: 30px; color: #111; }
+
+.info-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+    gap: 20px 40px;
+    margin-bottom: 30px;
+}
+
+.val { font-weight: 600; color: #333; margin-top: 2px; }
+
+.status-dot {
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+}
+.status-dot.green { background: var(--status-green); }
+
+.worker-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 4px;
+}
+.worker-info img { border-radius: 50%; }
+
+/* Status Approved Label */
+.status-section { margin-top: 20px; }
+.status-approved {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #111;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.status-approved i { color: var(--status-green); }
+
+/* Buttons */
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+button {
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: 0.2s;
+}
+
+.btn-reschedule { background: var(--primary-blue); color: white; }
+.btn-cancel { background: var(--btn-cancel); color: white; }
+
+button:hover { opacity: 0.9; transform: translateY(-1px); }
+
+.footer-simple {
+    text-align: center;
+    padding: 40px;
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+.year-stamp { float: right; margin-right: 5%; }

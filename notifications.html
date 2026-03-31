@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Details - Barangay Health Center</title>
+    <link rel="stylesheet" href="../../css/notifications-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="details-body">
+
+    <header class="main-header">
+        <div class="header-left">
+            <div class="logo">
+                <i class="fas fa-hand-holding-medical"></i>
+                <span>Barangay <br> Health Center</span>
+            </div>
+        </div>
+        <nav class="center-nav">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Register</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="header-right">
+            <div class="user-profile-mini">
+                <img src="https://via.placeholder.com/30" alt="User">
+                <span>[Patient Full Name]</span>
+                <a href="#" class="logout-link"><i class="fas fa-arrow-right"></i> Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="details-container">
+        <div class="title-section">
+            <p class="subtitle">10. Appointment Details Interface</p>
+            <h1>Barangay Health Center Appointment & Scheduling System</h1>
+            <p class="viewing-tag">Viewing detailed information for a specific appointment, [Patient Full Name].</p>
+        </div>
+
+        <div class="details-card shadow-card">
+            <div class="inner-grey-box">
+                <div class="detail-header">
+                    <p class="label">Appointment ID:</p>
+                    <h2 class="appt-id">#A-1011</h2>
+                </div>
+
+                <div class="patient-info">
+                    <p class="label">Patient Name:</p>
+                    <h3 class="patient-name">[Patient Full Name]</h3>
+                </div>
+
+                <div class="info-grid">
+                    <div class="grid-item">
+                        <p class="label">Service Type:</p>
+                        <p class="val"><i class="fas fa-stethoscope"></i> General Consultation</p>
+                    </div>
+                    <div class="grid-item">
+                        <p class="label">Date and Time:</p>
+                        <p class="val">October 28, 2024, at 09:00 AM</p>
+                    </div>
+                    <div class="grid-item">
+                        <p class="label">Stats:</p>
+                        <p class="val">Consultation</p>
+                    </div>
+                    <div class="grid-item">
+                        <p class="label">Assigned Health Worker: <span class="status-dot green"></span></p>
+                        <div class="worker-info">
+                            <img src="https://via.placeholder.com/25" alt="Doctor">
+                            <span>Dr. Sarah Lee</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="status-section">
+                    <p class="label">Status:</p>
+                    <div class="status-approved">
+                        <i class="fas fa-check-circle"></i> Approved
+                    </div>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="btn-reschedule">
+                    <i class="far fa-calendar-alt"></i> Reschedule
+                </button>
+                <button class="btn-cancel">
+                    <i class="fas fa-times"></i> Cancel Appointment
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-simple">
+        Barangay Health Center <span class="year-stamp">© 2024</span>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Queue Status - Barangay Health Center</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/queue-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="details-body">
+
+    <header class="main-header">
+        <div class="header-left">
+            <div class="logo">
+                <i class="fas fa-hand-holding-medical"></i>
+                <span>Barangay <br> Health Center</span>
+            </div>
+        </div>
+        <nav class="center-nav">
+            <a href="#">Home</a>
+            <a href="#">Services</a>
+            <a href="#">Register</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="header-right">
+            <div class="user-profile-mini">
+                <i class="fas fa-user-circle"></i>
+                <span>[Patient Full Name]</span>
+                <a href="#" class="logout-link">→ Logout</a>
+            </div>
+        </div>
+    </header>
+
+    <main class="details-container">
+        <div class="title-section">
+            <h1 class="main-title">Barangay Health Center Appointment & Scheduling System</h1>
+            <p class="viewing-tag">Viewing your current queue status, [Patient Full Name].</p>
+        </div>
+
+        <div class="details-card shadow-card">
+            <p class="panel-header-label">Queue Status Panel</p>
+            
+            <div class="queue-split-grid">
+                <div class="queue-main-box">
+                    <p class="section-label">YOUR QUEUE NUMBER:</p>
+                    <h2 class="big-number">12</h2>
+                    <div class="status-pill">STATUS: Waiting</div>
+                </div>
+
+                <div class="queue-info-box">
+                    <div class="info-item">
+                        <p class="section-label-bold">Now Serving: <strong class="hl-num">9</strong></p>
+                        <p class="muted-label">Current patient number being served</p>
+                    </div>
+                    <hr class="divider">
+                    <div class="info-item">
+                        <p class="section-label-bold">Estimated Waiting Time:</p>
+                        <h2 class="med-number">25 minutes</h2>
+                    </div>
+                    <hr class="divider">
+                    <div class="info-item">
+                        <p class="section-label-bold">Your Appointment Time: <strong class="hl-num">10:30 AM</strong></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="progress-section">
+                <p class="panel-header-label">Queue Progress Indicator</p>
+                
+                <div class="progress-container">
+                    <div class="progress-line active"></div>
+                    
+                    <div class="step active">
+                        <div class="dot-double">
+                            <i class="fas fa-eye"></i>
+                            <div class="inner-dot"></div>
+                        </div>
+                        <p>Waiting</p>
+                        <span class="you-are-here">YOU ARE HERE</span>
+                    </div>
+                    
+                    <div class="step disabled">
+                        <div class="dot-solid"></div>
+                        <p>Now Serving</p>
+                    </div>
+                    
+                    <div class="step disabled">
+                        <div class="dot-solid"></div>
+                        <p>Completed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-simple">
+        Barangay Health Center <span class="year-stamp">© 2024</span>
+    </footer>
+
+</body>
+</html>

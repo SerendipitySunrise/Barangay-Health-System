@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Profile - Barangay Health Center</title>
+    <link rel="stylesheet" href="../../css/profile-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="profile-body">
+
+    <header class="main-header">
+        <div class="header-left">
+            <div class="logo">
+                <i class="fas fa-hand-holding-medical"></i>
+                <span>Barangay <br> Health Center</span>
+            </div>
+        </div>
+
+        <div class="header-right">
+            <a href="#" class="login-link"><i class="fas fa-sign-in-alt"></i> Login</a>
+            <i class="fas fa-search icon-btn"></i>
+            <i class="fas fa-bars icon-btn"></i>
+        </div>
+    </header>
+
+    <main class="profile-container">
+        <div class="title-section">
+            <h1>PATIENT PROFILE</h1>
+        </div>
+
+        <div class="profile-card shadow-card">
+            <div class="profile-grid">
+                
+                <div class="info-column">
+                    <h2>1. Personal Information</h2>
+                    <div class="avatar-row">
+                        <div class="avatar-circle">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="input-group">
+                            <label>Full Name:</label>
+                            <input type="text" placeholder="[Patient Full Name]">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <p>Age: <span>[e.g., 34] Years</span></p>
+                    </div>
+                    <div class="form-row">
+                        <p>Gender: <span>[e.g., Male/Female/Other]</span></p>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Civil Status:</label>
+                        <select>
+                            <option>Single</option>
+                            <option>Married</option>
+                            <option>Widowed</option>
+                        </select>
+
+                        <label>Address:</label>
+                            <input class="1" type="text" placeholder="[Region]">
+                            <input class="2" type="text" placeholder="[City]">
+                            <input class="3" type="text" placeholder="[Barangay]">
+                            <input class="4" type="text" placeholder="[Street Name, Building, House No.]">
+
+                        <label>Contact Number:</label>
+                        <input type="text" placeholder="[e.g., 0917-123-4567]">
+
+                        <label>Email:</label>
+                        <input type="email" placeholder="[e.g., pat.ient@email.com]">
+                    </div>
+                </div>
+
+                    <h2>2. Emergency Information</h2>
+                    
+                    <div class="input-group">
+                        <label>Emergency Contact Name:</label>
+                        <input type="text" placeholder="[e.g., John Doe]">
+
+                        <label>Emergency Contact Number:</label>
+                        <input type="text" placeholder="[e.g., 0917-123-4567]">
+  
+                        <label>Relationship to Emergency Contact:</label>
+                        <input type="text" placeholder="[e.g., Father, Mother, Sibling]">
+                    </div>
+
+                    <h2>3. Medical History</h2>
+                    <div class="input-group">
+                        <label>Past Medical Conditions:</label>
+                        <textarea placeholder="[e.g., Hypertension, Type 2 Diabetes]"></textarea>
+
+                        <label>Current Medications:</label> 
+                        <textarea placeholder="[e.g., Metformin, Lisinopril]"></textarea>
+
+                        <label>Family Medical History:</label>
+                        <textarea placeholder="[e.g., Heart Disease, Cancer]"></textarea>
+                    </div>
+                
+                    <h2>4. Health Information</h2>
+                    
+                    <div class="input-group">
+                        <label>Blood Type:</label>
+                        <select>
+                            <option>[Dropdown with A+, B-, etc.]</option>
+                            <option>A+</option>
+                            <option>B+</option>
+                            <option>O+</option>
+                            <option>AB+</option>
+                        </select>
+
+                        <label>Allergies:</label>
+                        <textarea placeholder="[Editable list e.g., Penicillin, Peanuts]"></textarea>
+
+                        <label>Medical Conditions:</label>
+                        <textarea placeholder="[e.g., Hypertension, Type 2 Diabetes]"></textarea>
+                    </div>
+                </div>
+                    <div class="button-group">
+                        <button class="btn-secondary">Edit profile</button>
+                        <button class="btn-primary">Save changes</button>
+                    </div>
+                    <button class="btn-primary-outline">Update medical information</button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-simple">
+        Barangay Health Center
+    </footer>
+
+</body>
+</html>
